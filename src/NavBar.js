@@ -19,13 +19,15 @@ export default function NavBar() {
           Help Hearing, <br />
           With Ruby
         </p>
-        <p id="body" className="col-2">
-          Gallery
-        </p>
+        <NavLink id="body__nav-link" className="col-2" to="/gallery">
+          <p>
+            Gallery
+          </p>
+        </NavLink>
       </nav>
-        <div className="double-line" />
-        <div className="diamond" />
-        <div className="double-line__right" />
+      <div className="double-line" />
+      <div className="diamond" />
+      <div className="double-line__right" />
     </>
   );
 }

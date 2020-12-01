@@ -74,10 +74,16 @@ body {
   nav > p {
     margin: inherit;
     margin-top: 1%;
+    cursor: pointer;
   }
   nav > p:not(:first-child):not(:last-child) {
     margin-left: 1%;
     margin-right: 1%;
+  }
+  nav #body__nav-link {
+    text-decoration: none;
+    color: black;
+    cursor: auto;
   }
 
   .diamond {

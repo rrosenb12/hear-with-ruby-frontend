@@ -7,10 +7,16 @@ nav {
   & > p {
     margin: inherit;
     margin-top: 1%;
+    cursor: pointer;
     &:not(:first-child):not(:last-child){
         margin-left: 1%;
         margin-right: 1%;
     }
+  }
+  #body__nav-link{
+    text-decoration: none;
+    color: black;
+    cursor: auto;
   }
 }
 
