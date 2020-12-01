@@ -9,6 +9,13 @@ $bodyFont: "Open Sans", sans-serif;
   font-family: $titleFont;
   text-align: center;
   font-weight: bold;
-  font-size: 5vh;
+  font-size: 6vh;
   letter-spacing: 3%;
+  color: #DB2763;
+}
+
+#body {
+    font-family: $bodyFont;
+    font-weight: bolder;
+    font-size: 2.5vh;
 }

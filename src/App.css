@@ -69,6 +69,45 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
+    margin: 0%;
+  }
+  nav > p {
+    margin: inherit;
+    margin-top: 1%;
+  }
+  nav > p:not(:first-child):not(:last-child) {
+    margin-left: 1%;
+    margin-right: 1%;
+  }
+
+  .diamond {
+    height: 1em;
+    width: 1em;
+    background-color: #db2763;
+    transform: rotate(45deg);
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    top: 10.5%;
+  }
+
+  .double-line {
+    margin-top: 0.5%;
+    height: 0.4em;
+    width: 46%;
+    position: absolute;
+    border-top: 2px solid #db2763;
+    border-bottom: 2px solid #db2763;
+  }
+
+  .double-line__right {
+    margin-top: -0.6em;
+    height: 0.4em;
+    width: 46%;
+    border-top: 2px solid #db2763;
+    border-bottom: 2px solid #db2763;
+    float: right;
   }
 
   @import url("https://fonts.googleapis.com/css2?family=Clicker+Script&family=Open+Sans&display=swap");
@@ -130,8 +169,15 @@ body {
     font-family: "Clicker Script", cursive;
     text-align: center;
     font-weight: bold;
-    font-size: 5vh;
+    font-size: 6vh;
     letter-spacing: 3%;
+    color: #DB2763;
+  }
+
+  #body {
+    font-family: "Open Sans", sans-serif;
+    font-weight: bolder;
+    font-size: 2.5vh;
   }
 }
 
