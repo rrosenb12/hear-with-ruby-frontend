@@ -1,0 +1,47 @@
+home {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  align-items: center;
+  margin-top: 8% !important;
+  p {
+    text-align: justify;
+  }
+  img {
+    max-width: 30%;
+    max-height: 30%;
+    height: auto;
+    width: auto;
+    margin-left: 30%;
+  }
+  .heart-container {
+    left: 45%;
+    position: fixed;
+  }
+  .heart-container__2 {
+      left: 52%;
+      position: fixed;
+  }
+  .heart {
+    background-color: #db2763;
+    height: 30px;
+    width: 30px;
+    transform: rotate(-45deg);
+    &::before,
+    &::after {
+      content: "";
+      background-color: #db2763;
+      height: 30px;
+      width: 30px;
+      position: absolute;
+      border-radius: 50%;
+    }
+    &::before {
+      top: -15px;
+      // left: 0;
+    }
+    &::after {
+      left: 15px;
+    }
+  }
+}

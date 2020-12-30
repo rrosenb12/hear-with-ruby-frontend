@@ -4,22 +4,22 @@ import { NavLink } from "react-router-dom";
 export default function NavBar() {
   return (
     <>
-      <nav id="body" className="row">
-        <p id="body" className="col-2">
+      <nav id="nav" className="row">
+        <p className="col-2">
           Ruby's Story
         </p>
-        <p id="body" className="col-2">
+        <p className="col-2">
           Team <br />
           #HearWithRuby
         </p>
         <p id="title" className="col-4">
           Hear With Ruby
         </p>
-        <p id="body" className="col-2">
+        <p className="col-2">
           Help Hearing, <br />
           With Ruby
         </p>
-        <NavLink id="body__nav-link" className="col-2" to="/gallery">
+        <NavLink id="nav__nav-link" className="col-2" to="/gallery">
           <p>
             Gallery
           </p>

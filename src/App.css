@@ -80,10 +80,10 @@ body {
     margin-left: 1%;
     margin-right: 1%;
   }
-  nav #body__nav-link {
+  nav #nav__nav-link {
     text-decoration: none;
     color: black;
-    cursor: auto;
+    cursor: pointer;
   }
 
   .diamond {
@@ -171,18 +171,69 @@ body {
     width: 100%;
   }
 
+  home {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    align-items: center;
+    margin-top: 8% !important;
+  }
+  home p {
+    text-align: justify;
+  }
+  home img {
+    max-width: 30%;
+    max-height: 30%;
+    height: auto;
+    width: auto;
+    margin-left: 30%;
+  }
+  home .heart-container {
+    left: 45%;
+    position: fixed;
+  }
+  home .heart-container__2 {
+    left: 52%;
+    position: fixed;
+  }
+  home .heart {
+    background-color: #db2763;
+    height: 30px;
+    width: 30px;
+    transform: rotate(-45deg);
+  }
+  home .heart::before, home .heart::after {
+    content: "";
+    background-color: #db2763;
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    border-radius: 50%;
+  }
+  home .heart::before {
+    top: -15px;
+  }
+  home .heart::after {
+    left: 15px;
+  }
+
   #title {
     font-family: "Clicker Script", cursive;
     text-align: center;
     font-weight: bold;
     font-size: 6vh;
     letter-spacing: 3%;
-    color: #DB2763;
+    color: #db2763;
+  }
+
+  #nav {
+    font-family: "Open Sans", sans-serif;
+    font-weight: bolder;
+    font-size: 2.5vh;
   }
 
   #body {
     font-family: "Open Sans", sans-serif;
-    font-weight: bolder;
     font-size: 2.5vh;
   }
 }

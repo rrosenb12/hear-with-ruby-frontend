@@ -10,16 +10,15 @@ export default class Gallery extends React.Component {
     pics: [],
   };
 
-  componentDidMount() {
-    fetch(
-      `${this.rootUrl}/${this.userId}/media?access_token=${this.accessToken}&fields=id,timestamp`
-    )
-      .then((response) => response.json())
-      .then(console.log)
-      // .then((response) => {
-      //   this.setState({ media: response.data });
-      // });
-  }
+  // componentDidMount() {
+  //   fetch(
+  //     `${this.rootUrl}/${this.userId}/media?access_token=${this.accessToken}&fields=id,timestamp`
+  //   )
+  //     .then((response) => response.json())
+  //     .then((response) => {
+  //       this.setState({ media: response.data });
+  //     });
+  // }
 
   // componentDidUpdate() {
   //   this.state.media.map((media) => {
@@ -38,8 +37,8 @@ export default class Gallery extends React.Component {
   // }
 
   render() {
-    console.log("media:", this.state.media);
-    console.log("pics:", this.state.pics);
+    // console.log("media:", this.state.media);
+    // console.log("pics:", this.state.pics);
     return <div></div>;
   }
 }

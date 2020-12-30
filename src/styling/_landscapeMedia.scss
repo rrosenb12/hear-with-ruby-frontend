@@ -1,6 +1,7 @@
 @import "navbar";
-@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Open+Sans&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Clicker+Script&family=Open+Sans&display=swap");
 @import "columns";
+@import "home";
 
 $titleFont: "Clicker Script", cursive;
 $bodyFont: "Open Sans", sans-serif;
@@ -11,11 +12,16 @@ $bodyFont: "Open Sans", sans-serif;
   font-weight: bold;
   font-size: 6vh;
   letter-spacing: 3%;
-  color: #DB2763;
+  color: #db2763;
+}
+
+#nav {
+  font-family: $bodyFont;
+  font-weight: bolder;
+  font-size: 2.5vh;
 }
 
 #body {
-    font-family: $bodyFont;
-    font-weight: bolder;
-    font-size: 2.5vh;
+  font-family: $bodyFont;
+  font-size: 2.5vh;
 }
