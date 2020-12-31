@@ -221,6 +221,58 @@ body {
     left: 15px;
   }
 
+  .help {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+  }
+  .help p.col-12 {
+    text-align: justify;
+    text-align-last: center;
+  }
+  .help p.col-12:nth-of-type(2) {
+    text-align: center;
+    font-weight: bold;
+  }
+  .help .link-container {
+    display: inherit;
+    flex-direction: row;
+    text-align: center;
+  }
+  .help .link-container a {
+    text-decoration: none;
+    color: #db2763;
+  }
+  .help .link-container a:first-of-type {
+    margin-left: 6%;
+  }
+  .help .link-container a:last-of-type {
+    margin-left: -10%;
+  }
+  .help .link-container a:hover {
+    text-decoration: underline;
+  }
+  .help .link-container:last-of-type {
+    margin-top: 5%;
+    justify-content: center;
+  }
+  .help .link-container:last-of-type div {
+    display: inherit;
+    justify-content: inherit;
+    align-items: center;
+    border: 2px solid #db2763;
+    margin: 2%;
+    margin-top: 0% !important;
+    height: 10em;
+  }
+  .help .link-container:last-of-type div:hover {
+    background-color: #db2763;
+    color: white;
+    cursor: pointer;
+  }
+
   #title {
     font-family: "Clicker Script", cursive;
     text-align: center;

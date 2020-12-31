@@ -3,7 +3,7 @@ import React from "react";
 export default class Help extends React.Component {
   render() {
     return (
-      <help className="row" id="body">
+      <div className="row help" id="body">
         <p className="col-12">
           New York State, along with many others, does not require insurance
           companies to cover the expenses of hearing impairment. Thus, families
@@ -18,31 +18,33 @@ export default class Help extends React.Component {
           It is that blessing that motivates us to support all families with
           hearing impaired children to do the same.
         </p>
-        <ul>
+        <p className="col-12">
           For more information about hearing aid insurance laws by state, visit
           these websites:
-          <li>
-            <a
-              href="https://www.hearingloss.org/hearing-help/financial-assistance/state-hearing-aid-insurance-laws/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              HearingLoss.org
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://www.asha.org/advocacy/state/issues/ha_reimbursement/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              American Speech-Language-Hearing Association
-            </a>
-          </li>
-        </ul>
-        <div className="col-6">Apply for Support</div>
-        <div className="col-6">Help Others</div>
-      </help>
+        </p>
+        <div className="col-10 link-container">
+          <a
+            href="https://www.hearingloss.org/hearing-help/financial-assistance/state-hearing-aid-insurance-laws/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="col-6"
+          >
+            HearingLoss.org
+          </a>
+          <a
+            href="https://www.asha.org/advocacy/state/issues/ha_reimbursement/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="col-6"
+          >
+            American Speech-Language-Hearing Association
+          </a>
+        </div>
+        <div className="col-12 link-container">
+          <div className="col-6">Apply for Support</div>
+          <div className="col-6">Support Others</div>
+        </div>
+      </div>
     );
   }
 }
