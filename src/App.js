@@ -5,6 +5,7 @@ import Gallery from "./Gallery"
 import Home from "./Home"
 
 import "./App.css";
+import Help from "./Help";
 
 class App extends React.Component {
   render() {
@@ -13,6 +14,7 @@ class App extends React.Component {
         <NavBar />
         <Route exact path="/gallery" component={Gallery}/>
         <Route exact path="/" component={Home}/>
+        <Route exact path="/help" component={Help}/>
       </BrowserRouter>
     );
   }

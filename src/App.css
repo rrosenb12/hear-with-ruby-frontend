@@ -85,6 +85,10 @@ body {
     color: black;
     cursor: pointer;
   }
+  nav #nav__nav-link #title {
+    margin-top: 0% !important;
+    margin-bottom: 0% !important;
+  }
 
   .diamond {
     height: 1em;
