@@ -1,6 +1,7 @@
 import React from "react";
 
 export default class Help extends React.Component {
+
   render() {
     return (
       <div className="row help" id="body">
@@ -41,8 +42,21 @@ export default class Help extends React.Component {
           </a>
         </div>
         <div className="col-12 link-container">
-          <div className="col-6">Apply for Support</div>
-          <div className="col-6">Support Others</div>
+          <div
+            className="col-6"
+            onClick={() => {
+              this.setState({
+                clicked: "apply",
+              });
+            }}
+          >
+            Apply for Support
+          </div>
+          <div className="col-6" onClick={() => {
+              this.setState({
+                  clicked: "support"
+              })
+          }}>Support Others</div>
         </div>
       </div>
     );

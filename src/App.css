@@ -272,6 +272,9 @@ body {
     color: white;
     cursor: pointer;
   }
+  .help .fade {
+    position: absolute;
+  }
 
   #title {
     font-family: "Clicker Script", cursive;
