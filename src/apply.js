@@ -10,7 +10,7 @@ export default function Apply(props) {
         No one should struggle to afford the costs of hearing impairment.
       </p>
       <p className="col-12">
-        In need of support from the Hear With Ruby fund? <br /> Please
+        In need of support from the Hear With Ruby fund? <br /> Please {" "}
         <a href="mailto:HearWithRuby@gmail.com">email us</a> to be connected to
         our fund.
       </p>
