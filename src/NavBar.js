@@ -5,15 +5,15 @@ export default function NavBar() {
   return (
     <>
       <nav id="nav" className="row">
-        <p className="col-2">Ruby's Story</p>
+        <NavLink id="nav__nav-link" className="col-2" to="/story">
+          <p>Ruby's Story</p>
+        </NavLink>
         <p className="col-2">
           Team <br />
           #HearWithRuby
         </p>
         <NavLink id="nav__nav-link" className="col-4" to="/">
-          <p id="title">
-            Hear With Ruby
-          </p>
+          <p id="title">Hear With Ruby</p>
         </NavLink>
         <NavLink id="nav__nav-link" className="col-2" to="/help">
           <p>
