@@ -1,0 +1,15 @@
+.story {
+    display: flex;
+    width: 95%;
+    margin: 0 auto;
+    height: 80vh;
+    align-items: center;
+    .direction {
+        text-align: center;
+    }
+    .content {
+        border: 2px solid #db2763;
+        padding: 2%;
+        text-align: justify;
+    }
+}

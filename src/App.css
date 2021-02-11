@@ -336,6 +336,22 @@ body {
     color: #db2763;
   }
 
+  .story {
+    display: flex;
+    width: 95%;
+    margin: 0 auto;
+    height: 80vh;
+    align-items: center;
+  }
+  .story .direction {
+    text-align: center;
+  }
+  .story .content {
+    border: 2px solid #db2763;
+    padding: 2%;
+    text-align: justify;
+  }
+
   #title {
     font-family: "Clicker Script", cursive;
     text-align: center;
