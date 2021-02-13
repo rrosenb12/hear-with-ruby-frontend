@@ -6,6 +6,8 @@ import Story4 from "./story4";
 import Story5 from "./story5";
 import Story6 from "./story6";
 import Story7 from "./story7";
+import Story8 from "./story8";
+import Story9 from "./story9"
 
 export default function Story() {
   const [slide, setSlide] = useState(1);
@@ -17,6 +19,8 @@ export default function Story() {
     5: Story5,
     6: Story6,
     7: Story7,
+    8: Story8,
+    9: Story9
   };
   const Component = slides[slide];
 
@@ -32,17 +36,13 @@ export default function Story() {
       <div className="col-8 content" id="body">
         <Component />
       </div>
-      {slide === 7 ? (
-        ""
-      ) : (
         <p
           className="col-2 direction"
           id="title"
-          onClick={() => setSlide(slide + 1)}
+          onClick={() => slide !== Object.keys(slides).length && setSlide(slide + 1)}
         >
           next
         </p>
-      )}
     </div>
   );
 }

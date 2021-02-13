@@ -3,7 +3,7 @@ import React from "react";
 export default function Story4() {
   return (
     <>
-      <p>
+      <div>
         Ruby received her hearing aids on May 11, 2020. The adjustment to them
         was a roller coaster; she loved them, hated them, and then loved them
         again. We created team Hear With Ruby immediately, and began raising
@@ -15,10 +15,15 @@ export default function Story4() {
         celebrated with a party when they arrived, and friends sent pairs of
         charms to add to Ruby’s collection. We told Ruby that everyone is born
         with qualities that make them unique and special, and she loves to meet
-        new people and ask, <br /><b style={{"color": "#db2763", "justify-content": "center"}}>“What makes you unique and special?”</b><br/> We made her a
-        social story all about her aids to share with her friends at school, and
-        proudly walked with the Walk4Hearing in October 2020.
-      </p>
+        new people and ask,
+      </div>
+      <br />
+      <center className="center-text">“What makes you unique and special?”</center>
+      <br />
+      <div>
+        We made her a social story all about her aids to share with her friends
+        at school, and proudly walked with the Walk4Hearing in October 2020.
+      </div>
     </>
   );
 }

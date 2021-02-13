@@ -342,14 +342,23 @@ body {
     margin: 0 auto;
     height: 80vh;
     align-items: center;
+    margin-top: 2%;
   }
   .story .direction {
     text-align: center;
+  }
+  .story .direction:hover {
+    cursor: pointer;
   }
   .story .content {
     border: 2px solid #db2763;
     padding: 2%;
     text-align: justify;
+    transition: 1s ease-in-out;
+  }
+  .story .center-text {
+    color: #db2763;
+    font-weight: bold;
   }
 
   #title {

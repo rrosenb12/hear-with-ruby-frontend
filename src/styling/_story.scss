@@ -4,12 +4,21 @@
     margin: 0 auto;
     height: 80vh;
     align-items: center;
+    margin-top: 2%;
     .direction {
         text-align: center;
+        &:hover{
+            cursor: pointer;
+        }
     }
     .content {
         border: 2px solid #db2763;
         padding: 2%;
         text-align: justify;
+        transition: 1s ease-in-out;
+    }
+    .center-text {
+        color:#db2763;
+        font-weight: bold;
     }
 }
