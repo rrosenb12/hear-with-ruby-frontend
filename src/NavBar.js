@@ -13,10 +13,12 @@ export default function NavBar() {
             <NavLink id="nav__nav-link" className="col-2" to="/story">
               <p>Ruby's Story</p>
             </NavLink>
-            <p className="col-2">
-              Team <br />
-              #HearWithRuby
-            </p>
+            <NavLink id="nav__nav-link" className="col-2" to="/blog">
+              <p className="col-2">
+                Team <br />
+                #HearWithRuby
+              </p>
+            </NavLink>
             <NavLink id="nav__nav-link" className="col-4" to="/">
               <p id="title">Hear With Ruby</p>
             </NavLink>
@@ -47,7 +49,7 @@ export default function NavBar() {
             <NavLink className="link" to="/story">
               <p onClick={() => switchClicked(!clicked)}>Ruby's Story</p>
             </NavLink>
-            <NavLink className="link" to="/">
+            <NavLink className="link" to="/blog">
               <p onClick={() => switchClicked(!clicked)}>Team #HWR</p>
             </NavLink>
             <NavLink className="link" to="/">
