@@ -484,6 +484,27 @@ body {
     text-align: justify;
   }
 
+  .story {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .story .direction-container {
+    display: flex;
+    margin: 0 auto;
+    font-family: "Architects Daughter", cursive;
+    color: #db2763;
+  }
+  .story .direction-container :nth-child(2) {
+    text-align: right;
+  }
+  .story .content {
+    text-align: justify;
+    border-top: 4px double #db2763;
+    border-bottom: 4px double #db2763;
+    padding: 1%;
+  }
+
   @import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap");
 }
 

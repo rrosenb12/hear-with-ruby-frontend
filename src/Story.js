@@ -7,7 +7,7 @@ import Story5 from "./story5";
 import Story6 from "./story6";
 import Story7 from "./story7";
 import Story8 from "./story8";
-import Story9 from "./story9"
+import Story9 from "./story9";
 
 export default function Story() {
   const [slide, setSlide] = useState(1);
@@ -20,29 +20,59 @@ export default function Story() {
     6: Story6,
     7: Story7,
     8: Story8,
-    9: Story9
+    9: Story9,
   };
   const Component = slides[slide];
 
   return (
     <div className="row story">
-      <p
-        className="col-2 direction"
-        id="title"
-        onClick={() => slide !== 1 && setSlide(slide - 1)}
-      >
-        back
-      </p>
-      <div className="col-8 content" id="body">
-        <Component />
-      </div>
-        <p
-          className="col-2 direction"
-          id="title"
-          onClick={() => slide !== Object.keys(slides).length && setSlide(slide + 1)}
-        >
-          next
-        </p>
+      {window.innerHeight < window.innerWidth ? (
+        <>
+          <p
+            className="col-2 direction"
+            id="title"
+            onClick={() => slide !== 1 && setSlide(slide - 1)}
+          >
+            back
+          </p>
+          <div className="col-8 content" id="body">
+            <Component />
+          </div>
+          <p
+            className="col-2 direction"
+            id="title"
+            onClick={() =>
+              slide !== Object.keys(slides).length && setSlide(slide + 1)
+            }
+          >
+            next
+          </p>
+        </>
+      ) : (
+        <>
+          <div className="col-11 direction-container">
+            <p
+              className="col-6 direction"
+              id="title"
+              onClick={() => slide !== 1 && setSlide(slide - 1)}
+            >
+              back
+            </p>
+            <p
+              className="col-6 direction"
+              id="title"
+              onClick={() =>
+                slide !== Object.keys(slides).length && setSlide(slide + 1)
+              }
+            >
+              next
+            </p>
+          </div>
+          <div className="col-8 content" id="body">
+            <Component />
+          </div>
+        </>
+      )}
     </div>
   );
 }
