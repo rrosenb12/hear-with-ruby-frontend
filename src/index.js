@@ -3,10 +3,6 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import {config} from "./config"
-
-const myKey = config.rebecca
-const lindsayKey = config.lindsay
 
 ReactDOM.render(
   <React.StrictMode>
