@@ -44,18 +44,24 @@ export default function NavBar() {
             />
           </nav>
           <dropdown style={clicked ? { width: "150px" } : { width: "0" }}>
-            <NavLink to="/story">
-              <p>Ruby's Story</p>
+            <NavLink className="link" to="/story">
+              <p onClick={() => switchClicked(!clicked)}>Ruby's Story</p>
             </NavLink>
-            <p >Team #HWR</p>
-            <NavLink to="/">
-              <p id="title">Hear With Ruby</p>
+            <NavLink className="link" to="/">
+              <p onClick={() => switchClicked(!clicked)}>Team #HWR</p>
             </NavLink>
-            <NavLink to="/help">
-              <p>Help Hearing, With Ruby</p>
+            <NavLink className="link" to="/">
+              <p onClick={() => switchClicked(!clicked)} id="title">
+                Hear With Ruby
+              </p>
             </NavLink>
-            <NavLink to="/gallery">
-              <p>Gallery</p>
+            <NavLink className="link" to="/help">
+              <p onClick={() => switchClicked(!clicked)}>
+                Help Hearing, With Ruby
+              </p>
+            </NavLink>
+            <NavLink className="link" to="/gallery">
+              <p onClick={() => switchClicked(!clicked)}>Gallery</p>
             </NavLink>
           </dropdown>
         </>

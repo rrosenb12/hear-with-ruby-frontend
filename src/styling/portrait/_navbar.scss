@@ -20,4 +20,17 @@ dropdown {
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
+  text-align: center;
+  .link {
+      text-decoration: none;
+      p {
+        font-family: 'Architects Daughter', cursive;
+        color: black;
+        &#title{
+            font-weight: bolder;
+            border-top: 1px solid black;
+            border-bottom: 1px solid black;
+        }
+      }
+  }
 }

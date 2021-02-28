@@ -459,6 +459,19 @@ body {
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
+    text-align: center;
+  }
+  dropdown .link {
+    text-decoration: none;
+  }
+  dropdown .link p {
+    font-family: "Architects Daughter", cursive;
+    color: black;
+  }
+  dropdown .link p#title {
+    font-weight: bolder;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
   }
 
   home {
@@ -467,6 +480,8 @@ body {
     float: right;
     height: 100vh;
   }
+
+  @import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap");
 }
 
 /*# sourceMappingURL=App.css.map */
