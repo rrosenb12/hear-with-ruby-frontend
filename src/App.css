@@ -505,6 +505,118 @@ body {
     padding: 1%;
   }
 
+  .help {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+  }
+  .help p.col-12 {
+    text-align: justify;
+    text-align-last: center;
+  }
+  .help p.col-12:nth-of-type(2) {
+    text-align: center;
+    font-weight: bold;
+  }
+  .help .link-container {
+    display: inherit;
+    text-align: center;
+    width: 100% !important;
+    align-items: center;
+    justify-content: center;
+  }
+  .help .link-container a {
+    text-decoration: none;
+    color: #db2763;
+    width: 100% !important;
+  }
+  .help .link-container:last-of-type {
+    margin-top: 5%;
+    justify-content: center;
+  }
+  .help .link-container:last-of-type div {
+    display: inherit;
+    justify-content: inherit;
+    align-items: center;
+    border: 2px solid #db2763;
+    margin: 2%;
+    margin-top: 0% !important;
+    height: 10em;
+  }
+  .help .link-container:last-of-type div:hover {
+    background-color: #db2763;
+    color: white;
+    cursor: pointer;
+  }
+
+  .fade {
+    position: absolute;
+    background-color: grey;
+    width: 100vw;
+    height: 95vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .fade .popup {
+    position: absolute;
+    background-color: white;
+    border: 5px solid #db2763;
+    width: 80%;
+    height: 30em;
+  }
+  .fade .popup .support {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .fade .popup .support p:nth-of-type(2) {
+    color: #db2763;
+    font-weight: bold;
+    text-align: center;
+    margin-top: -3%;
+  }
+  .fade .popup .support p:last-of-type {
+    text-decoration: underline;
+    font-weight: bold;
+    margin-top: -1%;
+    cursor: pointer;
+    width: fit-content;
+  }
+  .fade .popup .support a {
+    color: #db2763;
+  }
+  .fade .popup .support a:hover {
+    background: #db2763;
+    color: white;
+  }
+  .fade .popup .support ul {
+    list-style: none;
+    text-align: justify !important;
+    margin-left: -13%;
+  }
+  .fade .popup .support ul div {
+    display: flex;
+    flex-direction: column;
+    border: 2px dotted #db2763;
+    padding: 2%;
+    margin-top: 1%;
+    text-align: left !important;
+  }
+  .fade .popup .support ul div li {
+    margin-top: 4%;
+  }
+  .fade .popup .support ul div li:before {
+    content: "★";
+    color: #db2763;
+  }
+  .fade .popup .support ul div li:last-of-type {
+    margin-bottom: 4%;
+  }
+
   @import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap");
 }
 

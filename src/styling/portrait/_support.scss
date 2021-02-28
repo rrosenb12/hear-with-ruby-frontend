@@ -1,0 +1,112 @@
+.help {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    p.col-12 {
+      text-align: justify;
+      text-align-last: center;
+      &:nth-of-type(2) {
+        text-align: center;
+        font-weight: bold;
+      }
+    }
+    .link-container {
+        display: inherit;
+      text-align: center;
+      width: 100% !important;
+      align-items: center;
+      justify-content: center;
+      a {
+        text-decoration: none;
+        color: #db2763;
+        width: 100% !important;
+      }
+      &:last-of-type {
+        margin-top: 5%;
+        justify-content: center;
+        div {
+          display: inherit;
+          justify-content: inherit;
+          align-items: center;
+          border: 2px solid #db2763;
+          margin: 2%;
+          margin-top: 0% !important;
+          height: 10em;
+          &:hover {
+            background-color: #db2763;
+            color: white;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+  
+  .fade {
+    position: absolute;
+    background-color: grey;
+    width: 100vw;
+    height: 95vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .popup {
+      position: absolute;
+      background-color: white;
+      border: 5px solid #db2763;
+      width: 80%;
+      height: 30em;
+      .support {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        p:nth-of-type(2) {
+          color: #db2763;
+          font-weight: bold;
+          text-align: center;
+          margin-top: -3%;
+        }
+        p:last-of-type {
+          text-decoration: underline;
+          font-weight: bold;
+          margin-top: -1%;
+          cursor: pointer;
+          width: fit-content;
+        }
+        a {
+          color: #db2763;
+          &:hover {
+            background: #db2763;
+            color: white;
+          }
+        }
+        ul {
+          list-style: none;
+          text-align: justify !important;
+          margin-left: -13%;
+          div {
+            display: flex;
+            flex-direction: column;
+            border: 2px dotted #db2763;
+            padding: 2%;
+            margin-top: 1%;
+            text-align: left !important;
+            li {
+              margin-top: 4%;
+              &:before {
+                content: "\2605";
+                color: #db2763;
+              }
+              &:last-of-type{
+                  margin-bottom: 4%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  
