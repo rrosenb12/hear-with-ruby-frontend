@@ -14,7 +14,7 @@ export default function NavBar() {
               <p>Ruby's Story</p>
             </NavLink>
             <NavLink id="nav__nav-link" className="col-2" to="/blog">
-              <p className="col-2">
+              <p >
                 Team <br />
                 #HearWithRuby
               </p>
