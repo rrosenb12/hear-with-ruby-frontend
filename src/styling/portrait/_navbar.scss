@@ -1,0 +1,23 @@
+nav {
+  display: flex;
+  background-color: #db2763;
+  height: 5vh;
+  align-items: center;
+  img {
+    display: flex;
+    height: auto;
+    width: auto;
+    max-height: 4vh;
+    margin-left: 1%;
+  }
+}
+dropdown {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  background-color: #f07ea4;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}

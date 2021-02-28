@@ -1,9 +1,9 @@
-@import "navbar";
+@import "landscape/navbar";
 @import url("https://fonts.googleapis.com/css2?family=Clicker+Script&family=Open+Sans&display=swap");
 @import "columns";
-@import "home";
-@import "help";
-@import "story";
+@import "landscape/home";
+@import "landscape/help";
+@import "landscape/story";
 
 $titleFont: "Clicker Script", cursive;
 $bodyFont: "Open Sans", sans-serif;

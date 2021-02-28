@@ -14,3 +14,7 @@ body {
 @media only screen and (orientation: landscape){
     @import "landscapeMedia";
 }
+
+@media only screen and (orientation: portrait){
+    @import "portraitMedia";
+}
