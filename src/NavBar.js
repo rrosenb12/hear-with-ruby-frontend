@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import heartPng from "./heart-png.webp";
+import logo from "./logo.jpeg"
 
 export default function NavBar() {
   const [clicked, switchClicked] = useState(false);
@@ -20,7 +21,7 @@ export default function NavBar() {
               </p>
             </NavLink>
             <NavLink id="nav__nav-link" className="col-4" to="/">
-              <p id="title">Hear With Ruby</p>
+              <img src={logo} alt="Hear With Ruby Logo"/>
             </NavLink>
             <NavLink id="nav__nav-link" className="col-2" to="/help">
               <p>

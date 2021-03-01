@@ -86,9 +86,11 @@ body {
     color: black;
     cursor: pointer;
   }
-  nav #nav__nav-link #title {
-    margin-top: 0% !important;
-    margin-bottom: 0% !important;
+  nav #nav__nav-link img {
+    max-height: 50%;
+    max-width: 50%;
+    height: auto;
+    width: auto;
   }
 
   .diamond {
@@ -181,7 +183,6 @@ body {
     width: 80%;
     margin: 0 auto;
     align-items: center;
-    margin-top: 8% !important;
   }
   home p {
     text-align: justify;
@@ -342,7 +343,6 @@ body {
     margin: 0 auto;
     height: 80vh;
     align-items: center;
-    margin-top: 2%;
   }
   .story .direction {
     text-align: center;

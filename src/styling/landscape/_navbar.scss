@@ -17,10 +17,16 @@ nav {
     text-decoration: none;
     color: black;
     cursor: pointer;
-    #title {
-      margin-top: 0% !important;
-      margin-bottom: 0% !important;
+    img {
+      max-height: 50%;
+      max-width: 50%;
+      height: auto;
+      width: auto;
     }
+    // #title {
+    //   margin-top: 0% !important;
+    //   margin-bottom: 0% !important;
+    // }
   }
 }
 
